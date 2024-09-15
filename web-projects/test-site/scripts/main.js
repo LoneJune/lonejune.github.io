@@ -16,14 +16,14 @@ function setUserName() {
     setUserName();
   } else {
     localStorage.setItem("name", myName);
-    myHeading.textContent = myName + "is cool" ;
+    myHeading.textContent = myName + "很cool" ;
   }
 }
 if (!localStorage.getItem("name")) {
   setUserName();
 } else {
   let storedName = localStorage.getItem("name");
-  myHeading.textContent = storedName + "is cool" ;
+  myHeading.textContent = storedName + "很cool" ;
 }
 myButton.onclick = function () {
   setUserName();
