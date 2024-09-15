@@ -16,14 +16,14 @@ function setUserName() {
     setUserName();
   } else {
     localStorage.setItem("name", myName);
-    myHeading.textContent = myName + "访问龙玉珺的第一个网页，" ;
+    myHeading.textContent = myName + "is cool，" ;
   }
 }
 if (!localStorage.getItem("name")) {
   setUserName();
 } else {
   let storedName = localStorage.getItem("name");
-  myHeading.textContent = storedName + "访问龙玉珺的第一个网页，" ;
+  myHeading.textContent = storedName + "is cool，" ;
 }
 myButton.onclick = function () {
   setUserName();
